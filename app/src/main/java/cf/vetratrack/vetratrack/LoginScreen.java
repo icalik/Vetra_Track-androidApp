@@ -32,7 +32,7 @@ public class LoginScreen extends AppCompatActivity {
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bLogin = (Button) findViewById(R.id.bLogin);
         //
-        final TextView tvLog = (TextView) findViewById(R.id.tv_Test);
+
         //
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +46,7 @@ public class LoginScreen extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             JSONObject jsonResponseMessage = jsonResponse.getJSONObject("message");
                             String status = jsonResponseMessage.getString("status");
-                            tvLog.setText(status);
+
 
                             if (status.equals(String.valueOf("success"))) {
                                 String fullName = jsonResponseMessage.getString("fullName");
