@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vetra Track</string>
+    <string name="login">Giriş Yap</string>
+    <string name="login_header">Giriş</string>
+    <string name="project_name">Vetra Araç Takip Sistemi</string>
+    <string name="username">Kullanıcı Adı</string>
+</resources>
