@@ -1,152 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context="cf.vetratrack.vetratrack.MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginScreen">
 
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_weight="1"
-        android:gravity="center"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:ignore="MissingConstraints">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="E-Mail" />
 
-        <LinearLayout
-            android:layout_marginHorizontal="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="320dp"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="7dp">
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etEmail"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="8dp">
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etPassword"
+        android:text="Giris Yap" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:text="TextView" />
 
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/txt_LogIn_Header"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="sans-serif"
-                    android:paddingBottom="20dp"
-                    android:text="@string/login_header"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="36sp"
-                    android:textStyle="bold"
-                    android:typeface="serif" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/txt_LogIn_Summary"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-smallcaps"
-                        android:paddingBottom="30dp"
-                        android:text="@string/project_name"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:typeface="sans"
-                        tools:ignore="NestedWeights" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:layout_marginTop="15dp">
-
-                <EditText
-                    android:id="@+id/etxt_UserName"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textWebEmailAddress"
-                    android:selectAllOnFocus="false"
-                    android:textAlignment="viewStart"
-                    android:textColor="#5b5555" />
-
-                <EditText
-                    android:id="@+id/etxt_Password"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    android:password="true"
-                    android:textColor="@android:color/black"
-                    android:maxLines="1" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    >
-
-                    <Button
-                        android:layout_marginBottom="7dp"
-                        android:layout_marginTop="15dp"
-                        android:hint="@string/username"
-                        android:id="@+id/btn_LogIn_Submit"
-                        android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:text="@string/login"
-                        android:backgroundTint="#eeaa00"
-                        android:background="@drawable/rounded_edittext"
-                        android:textColor="@android:color/white"
-                        tools:ignore="NestedWeights" />
-
-                    <Button
-                        android:id="@+id/btn_LogIn_SignUp"
-                        android:layout_height="60dp"
-                        android:background="@android:color/transparent"
-                        android:textColor="@android:color/white"
-                        android:layout_width="match_parent"
-
-                        android:layout_weight="1"
-                        android:text="Kayıt Ol"
-                        tools:ignore="HardcodedText" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </RelativeLayout>
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
