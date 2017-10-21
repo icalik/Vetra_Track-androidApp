@@ -4,6 +4,8 @@
     <string name="login_header">Giriş</string>
     <string name="project_name">Vetra Araç Takip Sistemi</string>
     <string name="username">Kullanıcı Adı</string>
+    <string name="pasword">Parola</string>
+    <string name="register">Kayıt Ol</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -18,4 +20,5 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
 </resources>
