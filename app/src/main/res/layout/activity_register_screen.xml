@@ -6,7 +6,7 @@
         android:paddingBottom="@dimen/activity_horizontal_margin"
         android:paddingLeft="@dimen/activity_vertical_margin"
         android:paddingRight="@dimen/activity_vertical_margin"
-        android:paddingTop="150dp"
+        android:paddingTop="140dp"
         android:background="#000000"
         tools:context="cf.vetratrack.vetratrack.RegisterScreen">
 
@@ -56,6 +56,21 @@
         android:paddingLeft="20dp" />
 
     <EditText
+        android:id="@+id/et_R_nameSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/et_R_username"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="@string/fullName"
+        android:paddingLeft="20dp" />
+
+    <EditText
         android:id="@+id/et_R_email"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
@@ -64,7 +79,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="7dp"
-        android:layout_below="@id/et_R_username"
+        android:layout_below="@id/et_R_nameSurname"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="@string/prompt_email"

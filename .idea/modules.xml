@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/VetraTrack.iml" filepath="$PROJECT_DIR$/VetraTrack.iml" />
       <module fileurl="file://$PROJECT_DIR$/Vetra_Track-androidApp.iml" filepath="$PROJECT_DIR$/Vetra_Track-androidApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

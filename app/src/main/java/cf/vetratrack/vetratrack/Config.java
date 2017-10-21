@@ -5,9 +5,10 @@ package cf.vetratrack.vetratrack;
  */
 
 public class Config {
+
     //URL to our API Service
-
-    public static final String LOGIN_URL = "https://server.resoft.org/aractakip/api/users/login.json";
-
+    public static final String BASE_URL = "https://server.resoft.org/aractakip";
+    public static final String LOGIN_URL = BASE_URL + "/api/users/login.json";
+    public static final String REGISTER_URL = BASE_URL + "/api/users/add";
 
 }

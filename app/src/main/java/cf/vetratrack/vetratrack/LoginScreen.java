@@ -31,10 +31,17 @@ public class LoginScreen extends AppCompatActivity {
         final EditText etEmail = (EditText) findViewById(R.id.etEmail);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bLogin = (Button) findViewById(R.id.bLogin);
+        final Button bRegister = (Button) findViewById(R.id.bRegister);
 
-        //
+        bRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginScreen.this, RegisterScreen.class);
+                startActivity(intent);
+            }
+        });
 
-        //
+
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,9 +62,11 @@ public class LoginScreen extends AppCompatActivity {
                                 Intent intent = new Intent(LoginScreen.this, HomeScreen.class);
                                 intent.putExtra("fullName",fullName);
                                 intent.putExtra("androidToken",androidToken);
+                                etEmail.setText("");
+                                etPassword.setText("");
                                 LoginScreen.this.startActivity(intent);
 
-                            }else {
+                            }else if(status.equals(String.valueOf("error"))){
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginScreen.this);
                                 builder.setMessage("Hatali bilgiler..")
                                         .setNegativeButton("Bi daha dene..", null)
