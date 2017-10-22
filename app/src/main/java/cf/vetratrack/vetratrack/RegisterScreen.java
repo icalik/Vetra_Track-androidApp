@@ -96,6 +96,7 @@ public class RegisterScreen extends AppCompatActivity {
                 RegisterRequest registerRequest = new RegisterRequest(email, password, username, fullName, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterScreen.this);
                 queue.add(registerRequest);
+
             }
         });
     }
